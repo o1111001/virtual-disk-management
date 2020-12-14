@@ -12,7 +12,7 @@ const listMachines = async () => {
 
 const addDisk = async () => {
   try {
-    const data = await client.addDisk(5, 15);
+    const data = await client.addDisk(15, 5);
     console.log(data);
   } catch (error) {
     console.log(`Problem adding disk: ${error.message || error}`);
